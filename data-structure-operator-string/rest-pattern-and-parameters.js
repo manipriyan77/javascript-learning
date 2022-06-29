@@ -59,4 +59,4 @@ add(1, 2, 3, 7, 8);
 const x = [23, 5, 7];
 add(...x);
 
-restaurant.orderPizza("mushtooms", "olives", "chicken", "tomatos");
+restaurant.orderPizza("mushrooms", "olives", "chicken", "tomatos");
