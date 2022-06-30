@@ -66,3 +66,19 @@ const game = {
 
   const players1Final = [...player1,'Thiago', 'Coutinho' , 'Perisic']
   console.log(players1Final);
+
+  const {odds:{team1,x:draw,team2}} = game;
+  console.log(draw,team1,team2);
+
+  const printGoals = function (...players){
+    console.log(players)
+    console.log(`${players.length} goals were scored`)
+  }
+
+  printGoals('Davies', 'Muller', 'Lewandowski' , 'Kimmich');
+  printGoals('Davies', 'Muller');
+  printGoals(...game.scored);
+
+  team1<team2 && console.log("Team 1 is more likely to win");
+  team1>team2 && console.log("Team 1 is more likely to win");
+
